@@ -1,20 +1,52 @@
-// EstructuraHeap.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
-
+using namespace std;
+#include "Priority.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+	Priority pq;
+
+	pq.push(100);
+	pq.push(48);
+	pq.push(150);
+	pq.push(75);
+	pq.push(189);
+	pq.push(42);
+	pq.push(72);
+	pq.push(97);
+
+	pq.print();
+
+	pq.pop();
+	//pq.print();
+	pq.pop();
+
+	pq.print();
+
+	pq.push(165);
+	pq.push(110);
+
+	pq.print();
+
+	pq.pop();
+
+	pq.print();
+
+	/*pq.push(14);
+	pq.push(10);
+	pq.push(8);
+	pq.push(25);
+	pq.push(73);
+	pq.push(5);
+
+	pq.print();
+
+	cout << "TOP: " << pq.top() << endl;
+	cout << "SIZE: " << pq.size() << endl;
+
+	pq.pop();
+
+	pq.print();
+
+	cout << "TOP: " << pq.top() << endl;
+	cout << "SIZE: " << pq.size() << endl; */
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
